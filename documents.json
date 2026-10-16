@@ -1,11 +1,57 @@
 [
   {
-    "name": "example",
-    "title": "TODO(author): the first document this industry must produce",
-    "for_each": "select gen_random_uuid() as id, 'Example' as name",
+    "name": "program-pack",
+    "title": "Program review pack",
+    "for_each": "select id,name from programs",
     "file": "name",
     "sections": [
-      { "title": "Details", "sql": "select 'replace me' as item, $1::text as record_id" }
+      {
+        "title": "Objective and ownership",
+        "sql": "select name,owner,objective from programs where id=$1"
+      },
+      {
+        "title": "People and progress",
+        "sql": "select rep,tasks,achieved,overdue,unverified,due_on,status from ramp_status where program_id=$1 order by rep"
+      },
+      {
+        "title": "Milestone evidence",
+        "sql": "select rep,milestone,verified_value,target,unit,evidence,checked_on from milestone_status where program_id=$1 order by rep,milestone",
+        "note": "Recorded progress is not proof that the program caused a sales result."
+      }
+    ]
+  },
+  {
+    "name": "coaching-brief",
+    "title": "Coaching brief",
+    "for_each": "select id,name from reps",
+    "file": "name",
+    "sections": [
+      {
+        "title": "Open coaching",
+        "sql": "select coach,topic,due_on from coaching where rep_id=$1 and status='open' order by due_on"
+      },
+      {
+        "title": "Evidence to discuss",
+        "sql": "select program,milestone,verified_value,target,unit,due_on from milestone_status where rep_id=$1 order by due_on",
+        "note": "Internal draft. Check accuracy with the rep before use."
+      }
+    ]
+  },
+  {
+    "name": "completion-record",
+    "title": "Program evidence record",
+    "for_each": "select e.id,r.name||' - '||p.name name from enrolments e join reps r on r.id=e.rep_id join programs p on p.id=e.program_id",
+    "file": "name",
+    "sections": [
+      {
+        "title": "Assignment",
+        "sql": "select rep,program,started_on,due_on,status,tasks,achieved from ramp_status where id=$1"
+      },
+      {
+        "title": "Verified observations",
+        "sql": "select milestone,kind,verified_value,target,unit,evidence,checked_on,achieved from milestone_status where enrolment_id=$1 order by milestone",
+        "note": "An internal record, not a qualification or certification."
+      }
     ]
   }
 ]

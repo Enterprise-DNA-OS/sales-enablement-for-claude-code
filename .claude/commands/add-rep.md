@@ -1,0 +1,13 @@
+# add-rep
+
+Add a rep only with a supplied name, manager, team, lawful purpose and review date.
+
+Read README.md and docs/compliance.md. Run:
+
+```bash
+npm run enablement -- add-rep --name=... --manager=... --team=... --purpose=... --review-on=... --actor=... --json
+```
+
+Replace placeholders with operator-supplied values. Never pass the literal dots. Names and id prefixes are supported. If ambiguous, show candidates and ask which record. Present the result in plain language. Do not infer evidence, dates, completed work or approval.
+
+Read the affected record first. Use the actual operator name as actor. Run with --dry-run before bulk work, inspect the result, then apply the authorised change. Actor labels are attribution, not authentication.

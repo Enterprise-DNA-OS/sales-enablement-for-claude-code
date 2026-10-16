@@ -1,13 +1,40 @@
 [
   {
     "name": "week",
-    "title": "This week",
-    "subtitle": "Sales Enablement for Claude Code: what needs attention, rendered by npm run view",
+    "title": "Enablement week",
+    "subtitle": "Fictional demo until you import your own records",
     "sections": [
       {
-        "title": "Needs attention",
-        "note": "TODO(author): point this at the industry's attention view (overdue, stuck, quiet).",
-        "sql": "select 'replace me' as item, 'TODO(author)' as why"
+        "title": "Rep progress",
+        "sql": "select rep,program,tasks,achieved,overdue,unverified,due_on,status from ramp_status order by rep"
+      },
+      {
+        "title": "Coaching actions",
+        "sql": "select r.name rep,c.coach,c.topic,c.due_on from coaching c join reps r on r.id=c.rep_id where c.status='open' order by c.due_on"
+      }
+    ]
+  },
+  {
+    "name": "milestones",
+    "title": "Evidence and milestones",
+    "sections": [
+      {
+        "title": "Evidence still needed",
+        "sql": "select rep,program,milestone,verified_value,target,unit,due_on,overdue from milestone_status where not achieved order by due_on,rep"
+      }
+    ]
+  },
+  {
+    "name": "programs",
+    "title": "Program review",
+    "sections": [
+      {
+        "title": "Program results",
+        "sql": "select name,owner,enrolled,completed,overdue_milestones,unverified_milestones from program_summary order by name"
+      },
+      {
+        "title": "Playbook review dates",
+        "sql": "select name,owner,location,review_on from playbooks order by review_on"
       }
     ]
   }

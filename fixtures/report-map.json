@@ -1,0 +1,16 @@
+{
+  "rep_id": "User ID",
+  "rep_name": "User Name",
+  "program_id": "Program ID",
+  "program_name": "Program Name",
+  "assignment_id": "Assignment ID",
+  "started_on": "Started On",
+  "due_on": "Due On",
+  "task_id": "Task ID",
+  "task_name": "Task Name",
+  "kind": "Task Kind",
+  "target": "Target",
+  "unit": "Unit",
+  "day_offset": "Target Day",
+  "reported_value": "Reported Progress"
+}
