@@ -1,3 +1,7 @@
+---
+description: "Milestones"
+---
+
 # milestones
 
 Read targets, units and days from enrolment before interpreting progress.

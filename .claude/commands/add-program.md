@@ -1,3 +1,7 @@
+---
+description: "Add program"
+---
+
 # add-program
 
 Define the program objective and owner.

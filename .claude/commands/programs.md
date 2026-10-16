@@ -1,3 +1,7 @@
+---
+description: "Programs"
+---
+
 # programs
 
 Compare assignments, completions and missing evidence across programs.

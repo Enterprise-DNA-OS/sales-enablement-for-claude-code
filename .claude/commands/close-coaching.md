@@ -1,3 +1,7 @@
+---
+description: "Close coaching"
+---
+
 # close-coaching
 
 Record the actual outcome of a coaching action.

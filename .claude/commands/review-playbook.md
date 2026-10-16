@@ -1,3 +1,7 @@
+---
+description: "Review playbook"
+---
+
 # review-playbook
 
 Record a completed review of playbook wording.

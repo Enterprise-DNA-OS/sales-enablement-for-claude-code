@@ -1,3 +1,7 @@
+---
+description: "Reopen program"
+---
+
 # reopen-program
 
 Reopen a mistaken completion with the operator-supplied reason before correcting it.

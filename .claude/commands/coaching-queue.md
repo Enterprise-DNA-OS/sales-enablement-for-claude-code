@@ -1,3 +1,7 @@
+---
+description: "Coaching queue"
+---
+
 # coaching-queue
 
 Review open coaching actions and their owners.

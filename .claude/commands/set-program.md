@@ -1,3 +1,7 @@
+---
+description: "Set program"
+---
+
 # set-program
 
 Change a program owner or objective while preserving milestone definitions.

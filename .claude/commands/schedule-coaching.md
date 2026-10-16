@@ -1,3 +1,7 @@
+---
+description: "Schedule coaching"
+---
+
 # schedule-coaching
 
 Record the coach, topic and agreed follow-up date.

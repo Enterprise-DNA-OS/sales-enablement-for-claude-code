@@ -1,3 +1,7 @@
+---
+description: "Complete program"
+---
+
 # complete-program
 
 Complete an assignment only after every task has verified evidence.

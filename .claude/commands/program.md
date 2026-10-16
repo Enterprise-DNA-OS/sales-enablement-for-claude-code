@@ -1,3 +1,7 @@
+---
+description: "Program"
+---
+
 # program
 
 Read the complete program definition and its people.

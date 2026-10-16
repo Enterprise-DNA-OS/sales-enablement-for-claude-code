@@ -1,3 +1,7 @@
+---
+description: "Add playbook"
+---
+
 # add-playbook
 
 Register an existing playbook and its review evidence.

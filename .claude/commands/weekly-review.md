@@ -1,3 +1,7 @@
+---
+description: "Weekly review"
+---
+
 # weekly-review
 
 Write the Monday enablement review from current records.

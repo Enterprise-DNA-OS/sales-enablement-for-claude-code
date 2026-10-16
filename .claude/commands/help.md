@@ -1,3 +1,7 @@
+---
+description: "Help"
+---
+
 # help
 
 Show exact CLI syntax.

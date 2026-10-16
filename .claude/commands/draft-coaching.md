@@ -1,3 +1,7 @@
+---
+description: "Draft coaching"
+---
+
 # draft-coaching
 
 Write an internal coaching brief to drafts. Never send it.

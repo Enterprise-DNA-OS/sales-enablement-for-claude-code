@@ -1,3 +1,7 @@
+---
+description: "Log progress"
+---
+
 # log-progress
 
 Record an absolute value supported by evidence. Do not add to the prior value.

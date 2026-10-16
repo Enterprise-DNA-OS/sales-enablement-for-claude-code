@@ -1,3 +1,7 @@
+---
+description: "Enrol"
+---
+
 # enrol
 
 Assign a rep after checking the definition and dates.

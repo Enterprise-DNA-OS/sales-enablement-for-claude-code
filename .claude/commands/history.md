@@ -1,3 +1,7 @@
+---
+description: "History"
+---
+
 # history
 
 Read recorded mutations and the evidence supplied by operators.

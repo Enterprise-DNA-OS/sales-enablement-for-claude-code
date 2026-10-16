@@ -1,3 +1,7 @@
+---
+description: "Add milestone"
+---
+
 # add-milestone
 
 Define an exercise, milestone or outcome before anyone enrols.
